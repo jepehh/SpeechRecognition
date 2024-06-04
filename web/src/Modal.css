@@ -1,0 +1,91 @@
+/* Modal.css */
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal-overlay, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.modal-content {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    top: 50%; /* Changed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    border-radius: 20px;
+    max-width: 1000px;
+    min-width: 600px;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+}
+
+.modal-content h2, p, button {
+    background-color: #f1f1f1;
+}
+
+.modal-content h2{
+    position: absolute;
+}
+
+.modal-content p{
+    position: relative;
+    margin-top: 60px;
+    align-items: left;
+    align-self: left;
+    text-align: left;
+}
+
+.modal-content .container {
+    box-sizing: border-box;
+    position: absolute;
+    width: 990px;
+    height: 50px;
+    top: 30%;
+    background: #FFFFFF;
+    border: 1px solid #727272;
+    border-radius: 15px;
+}
+
+.modal-content .container-2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 990px;
+    height: 50px;
+    top: 60%;
+    background: #FFFFFF;
+    border: 1px solid #727272;
+    border-radius: 15px;
+}
+
+.modal-content button {
+    align-self: center; /* Added */
+    width: 800px;
+    height: 30px;
+    background: #5C8AFF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 400;
+}
+
